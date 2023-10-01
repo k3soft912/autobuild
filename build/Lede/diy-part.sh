@@ -4,6 +4,17 @@
 # 自行拉取插件之前请SSH连接进入固件配置里面确认过没有你要的插件再单独拉取你需要的插件
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 
+# Mypackge
+#sed -i '$a src-git packges https://github.com/Myoko/openwrt-packages.git' feeds.conf.default
+#sed -i '$a src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' feeds.conf.default
+#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall.git' feeds.conf.default
+#sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
+#sed -i '$a src-git neobird https://github.com/thinktip/luci-theme-neobird.git' feeds.conf.default
+#git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
+#git clone https://github.com/Myoko/openwrt-packages package/openwrt-packages
+git clone https://github.com/thinktip/luci-theme-neobird package/luci-theme-neobird
+#git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+#git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # 后台IP设置
 export Ipv4_ipaddr="192.168.99.1"            # 修改openwrt后台地址(填0为关闭)
